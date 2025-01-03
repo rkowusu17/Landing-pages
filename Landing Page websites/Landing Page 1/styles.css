@@ -245,11 +245,23 @@ nav {
   border: none;
   font-size: 1rem;
   background-color: transparent;
+  padding: 10px;
+  transition: all 0.5s;
+}
+
+.header_content input:hover {
+  border-bottom: 1px solid #333;
+  border-radius: 5px;
+}
+
+.header_content input:focus {
+  border: 1px solid #333;
+  border-radius: 5px;
 }
 
 .header_content input::placeholder {
-  font-weight: 600;
-  color: var(--text-dark);
+  font-weight: 400;
+  color: #767272;
 }
 
 .header_content .input_group span {
@@ -276,11 +288,12 @@ nav {
   background-color: var(--primary-color-dark);
 }
 
-.header_content footer {
+.header_content .bar {
   font-size: 0.9rem;
   color: var(--text-light);
   text-align: center;
 }
+
 @media (width > 820px) {
   nav {
     position: static;
@@ -367,5 +380,16 @@ nav {
   }
   .header_content :is(h1, p, .bar) {
     text-align: left;
+  }
+}
+
+@media (width > 1020px) {
+  .header_content form {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .header_content button {
+    width: fit-content;
   }
 }

@@ -32,3 +32,29 @@ dateInp.setAttribute("placeholder", currentDate);
 
 footerYear.textContent = year;
 // console.log(footerYear);
+
+scrollReveal({
+  distance: "50px",
+  origin: "bottom",
+  duration: 1000,
+});
+
+scrollReveal().reveal(".header_image img", {
+  origin: "right",
+});
+
+scrollReveal().reveal(".header_content h1", {
+  delay: 500,
+});
+
+scrollReveal().reveal(".header_content p", {
+  delay: 1000,
+});
+
+scrollReveal().reveal(".header_content form", {
+  delay: 1500,
+});
+
+scrollReveal().reveal(".header_content bar", {
+  delay: 2000,
+});
