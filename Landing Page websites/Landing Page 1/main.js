@@ -36,12 +36,13 @@ footerYear.textContent = year;
 const scrollRevealoption = {
   distance: "50px",
   origin: "bottom",
-  duration: 1000,
+  duration: 1400,
 };
 
 ScrollReveal().reveal(".header_image img", {
   ...scrollRevealoption,
   origin: "right",
+  duration: 2000,
 });
 
 ScrollReveal().reveal(".header_content h1", {
@@ -58,4 +59,10 @@ ScrollReveal().reveal(".header_content form", {
 
 ScrollReveal().reveal(".header_content bar", {
   delay: 2000,
+});
+
+ScrollReveal().reveal(".header_image_card", {
+  duration: 1000,
+  interval: 200,
+  delay: 1000,
 });
